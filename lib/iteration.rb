@@ -69,7 +69,7 @@ def total_even_pairs(src)
       element_results << src[row_index][element_index]
       element_index += 1
     end
-    if element_results[0].even? && element_results[1].even? #we have to filter all element_results into even numbers
+    if element_results[0] % 2 == 0 && element_results[1] % 2 == 0 #we have to filter all element_results into even numbers
       sum += (element_results[0] + element_results[1])
     end
     row_results.push(element_results)
