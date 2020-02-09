@@ -67,8 +67,9 @@ while row_index < src.length do
   element_results = []
   while element_index < src[row_index].length do
     element_results << src[row_index][element_index] # we save all the elements into element_results
-    if element_results.even? #we have to filter all element_results into even numbers
+    if element_results[element_index].even? #we have to filter all element_results into even numbers
       sum += element_results[element_index]
+      p element_results[element_index]
     end
     element_index += 1
   end
