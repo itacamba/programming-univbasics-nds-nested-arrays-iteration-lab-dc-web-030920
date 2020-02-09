@@ -22,6 +22,8 @@ def join_ingredients(src)
   p row_results # will return the message after every iteration of src.length
 end
 
+
+
 def find_greater_pair(src)
   # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
   # Produce a new Array that contains the larger number of each of the pairs
@@ -47,6 +49,8 @@ def find_greater_pair(src)
 
 end
 
+
+
 def total_even_pairs(src)
   # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
   # if both numbers in the pair are even, then add both those numbers to the
@@ -62,8 +66,8 @@ while row_index < src.length do
   element_index = 0
   element_results = []
   while element_index < src[row_index].length do
-    if src[row_index][element_index].even?
-      element_results << src[row_index][element_index]
+    element_results << src[row_index][element_index] # we save all the elements into element_results
+    if element_results.even? #we have to filter all element_results into even numbers
       #sum += element_results[element_index]
       p src[row_index[element_index]
     end
@@ -71,7 +75,7 @@ while row_index < src.length do
   end
   row_index += 1
 end
-  p sum
+  p element_results
 
 
 end
