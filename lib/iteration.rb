@@ -63,7 +63,7 @@ while row_index < src.length do
   element_results = []
   while element_index < src[row_index].length do
     if src[row_index][element_index].even?
-      #element_results << src[row_index][element_index]
+      element_results << src[row_index][element_index]
       #sum += element_results[element_index]
       p src[row_index[element_index]
     end
